@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lexicon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2005/01/pronunciation-lexicon http://www.w3.org/TR/2007/CR-pronunciation-lexicon-20071212/pls.xsd" version="1.0" alphabet="ipa" xml:lang="cs-CZ" xmlns="http://www.w3.org/2005/01/pronunciation-lexicon">
+  <lexeme>
+    <grapheme>AI</grapheme>
+    <alias>éj áj</alias>
+  </lexeme>
+  <lexeme>
+    <grapheme>AI Act</grapheme>
+    <alias>éj áj ekt</alias>
+  </lexeme>
+  <lexeme>
+    <grapheme>LLM</grapheme>
+    <alias>el el em</alias>
+  </lexeme>
+  <lexeme>
+    <grapheme>large language model</grapheme>
+    <alias>lárdž lengvidž model</alias>
+  </lexeme>
+  <lexeme>
+    <grapheme>language model</grapheme>
+    <alias>lengvidž model</alias>
+  </lexeme>
+  <lexeme>
+    <grapheme>Turing</grapheme>
+    <phoneme>tjuːrɪŋg</phoneme>
+  </lexeme>
+  <lexeme>
+    <grapheme>Turingův</grapheme>
+    <phoneme>tjuːrɪŋguv</phoneme>
+  </lexeme>
+  <lexeme>
+    <grapheme>Dartmouth</grapheme>
+    <alias>dártmauth</alias>
+  </lexeme>
+  <lexeme>
+    <grapheme>Copilot</grapheme>
+    <alias>koupajlot</alias>
+  </lexeme>
+  <lexeme>
+    <grapheme>Copilot Studio</grapheme>
+    <alias>koupajlot stjůdio</alias>
+  </lexeme>
+  <lexeme>
+    <grapheme>Entra ID</grapheme>
+    <alias>entra ajdí</alias>
+  </lexeme>
+  <lexeme>
+    <grapheme>Viva</grapheme>
+    <alias>víva</alias>
+  </lexeme>
+  <lexeme>
+    <grapheme>Power Platform</grapheme>
+    <alias>pauer platform</alias>
+  </lexeme>
+  <lexeme>
+    <grapheme>Power Apps</grapheme>
+    <alias>pauer epps</alias>
+  </lexeme>
+  <lexeme>
+    <grapheme>Power Automate</grapheme>
+    <alias>pauer automejt</alias>
+  </lexeme>
+  <lexeme>
+    <grapheme>Power BI</grapheme>
+    <alias>pauer bí áj</alias>
+  </lexeme>
+  <lexeme>
+    <grapheme>NIS2</grapheme>
+    <alias>nis dva</alias>
+  </lexeme>
+  <lexeme>
+    <grapheme>GDPR</grapheme>
+    <alias>dží dý pí ár</alias>
+  </lexeme>
+  <lexeme>
+    <grapheme>phishing</grapheme>
+    <alias>fišing</alias>
+  </lexeme>
+  <lexeme>
+    <grapheme>deepfake</grapheme>
+    <phoneme>diːˈ.pˈ.fe͡ɪˈk</phoneme>
+  </lexeme>
+  <lexeme>
+    <grapheme>dataset</grapheme>
+    <alias>dejta set</alias>
+  </lexeme>
+  <lexeme>
+    <grapheme>open source</grapheme>
+    <alias>oupen sórs</alias>
+  </lexeme>
+  <lexeme>
+    <grapheme>cloud</grapheme>
+    <alias>klaud</alias>
+  </lexeme>
+  <lexeme>
+    <grapheme>Microsoft</grapheme>
+    <alias>majkrosoft</alias>
+  </lexeme>
+  <lexeme>
+    <grapheme>365</grapheme>
+    <alias>třista šedesát pět</alias>
+  </lexeme>
+  <lexeme>
+    <grapheme>Chat</grapheme>
+    <alias>čet</alias>
+  </lexeme>
+  <lexeme>
+    <grapheme>chat</grapheme>
+    <alias>čet</alias>
+  </lexeme>
+  <lexeme>
+    <grapheme>SharePoint</grapheme>
+    <alias>šérpojnt</alias>
+  </lexeme>
+  <lexeme>
+    <grapheme>OneDrive</grapheme>
+    <alias>vandrájv</alias>
+  </lexeme>
+  <lexeme>
+    <grapheme>Azure</grapheme>
+    <alias>ežur</alias>
+  </lexeme>
+  <lexeme>
+    <grapheme>Azure OpenAI</grapheme>
+    <alias>ežur oupen ej áj</alias>
+  </lexeme>
+  <lexeme>
+    <grapheme>OpenAI</grapheme>
+    <alias>oupen ej áj</alias>
+  </lexeme>
+  <lexeme>
+    <grapheme>SAS</grapheme>
+    <alias>es á es</alias>
+  </lexeme>
+  <lexeme>
+    <grapheme>API</grapheme>
+    <alias>ej pí aj</alias>
+  </lexeme>
+  <lexeme>
+    <grapheme>MFA</grapheme>
+    <alias>em ef ej</alias>
+  </lexeme>
+  <lexeme>
+    <grapheme>SSO</grapheme>
+    <alias>es es ou</alias>
+  </lexeme>
+  <lexeme>
+    <grapheme>chatbot</grapheme>
+    <alias>četbot</alias>
+  </lexeme>
+  <lexeme>
+    <grapheme>prompt</grapheme>
+    <phoneme>proˈm.pt</phoneme>
+  </lexeme>
+  <lexeme>
+    <grapheme>hallucination</grapheme>
+    <alias>halusinejšn</alias>
+  </lexeme>
+  <lexeme>
+    <grapheme>bias</grapheme>
+    <alias>bajas</alias>
+  </lexeme>
+  <lexeme>
+    <grapheme>NLP</grapheme>
+    <alias>en el pí</alias>
+  </lexeme>
+  <lexeme>
+    <grapheme>GPU</grapheme>
+    <alias>dží pí jů</alias>
+  </lexeme>
+  <lexeme>
+    <grapheme>SQL</grapheme>
+    <alias>es kju él</alias>
+  </lexeme>
+  <lexeme>
+    <grapheme>GenAI</grapheme>
+    <alias>džen éj áj</alias>
+  </lexeme>
+  <lexeme>
+    <grapheme>60. letech</grapheme>
+    <alias>šedesátých letech</alias>
+  </lexeme>
+  <lexeme>
+    <grapheme>20. století</grapheme>
+    <alias>dvacátého století</alias>
+  </lexeme>
+  <lexeme>
+    <grapheme>ChatGPT</grapheme>
+    <alias>čet džý pý tý</alias>
+  </lexeme>
+  <lexeme>
+    <grapheme>Governance</grapheme>
+    <alias>Gavernenc</alias>
+  </lexeme>
+  <lexeme>
+    <grapheme>promptu</grapheme>
+    <phoneme>proˈm.pˈ.tˈ.u</phoneme>
+  </lexeme>
+</lexicon>
