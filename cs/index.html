@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copilot Chat - Bezpečná AI pro vaši firmu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-light">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top p-3">
+        <div class="navbar-container container-fluid">
+            <!-- Brand Pill -->
+            <a class="navbar-brand-pill text-decoration-none text-dark d-flex align-items-center gap-2" href="index.html">
+                <div class="brand-icon" style="width: 24px; height: 24px; border: 2px solid #ff4b4b; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                    <div style="width: 8px; height: 8px; background: #ff4b4b; border-radius: 50%;"></div>
+                </div>
+                <span class="fw-bold">Copilot Chat</span>
+            </a>
+
+            <!-- Mobile Toggler -->
+            <button class="navbar-toggler d-lg-none border-0 shadow-sm bg-white rounded-circle p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Menu Pill -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <div class="navbar-menu-pill d-none d-lg-flex bg-white rounded-pill px-4 py-2 shadow-sm gap-4">
+                    <a class="nav-link active fw-semibold text-dark text-decoration-none" href="index.html">Domů</a>
+                    <a class="nav-link fw-semibold text-dark text-decoration-none" href="challenge.html">30denní výzva</a>
+                    <a class="nav-link fw-semibold text-dark text-decoration-none" href="news.html">Novinky</a>
+                    <a class="nav-link fw-semibold text-dark text-decoration-none" href="privacy.html">Soukromí</a>
+                    <a class="nav-link fw-semibold text-dark text-decoration-none" href="about.html">O nás</a>
+                </div>
+                <!-- Mobile Menu -->
+                <div class="d-lg-none mt-3 bg-white p-3 rounded shadow">
+                    <div class="d-flex flex-column gap-2">
+                        <a class="nav-link active text-dark text-decoration-none p-2 rounded" href="index.html">Domů</a>
+                        <a class="nav-link text-dark text-decoration-none p-2 rounded" href="challenge.html">30denní výzva</a>
+                        <a class="nav-link text-dark text-decoration-none p-2 rounded" href="news.html">Novinky</a>
+                        <a class="nav-link text-dark text-decoration-none p-2 rounded" href="privacy.html">Soukromí</a>
+                        <a class="nav-link text-dark text-decoration-none p-2 rounded" href="about.html">O nás</a>
+                        <hr>
+                        <div class="d-flex gap-2">
+                             <a href="../en/index.html" class="text-muted text-decoration-none">EN</a>
+                             <a href="../cs/index.html" class="text-muted text-decoration-none hover-primary">CZ</a>
+                             <a href="../sk/index.html" class="text-muted text-decoration-none">SK</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Actions Pill -->
+            <div class="d-none d-lg-flex align-items-center gap-3">
+                <div class="navbar-actions-pill bg-white rounded-circle shadow-sm d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                    <a href="#" class="text-dark"><i class="fas fa-search"></i></a>
+                </div>
+                <!-- Language Switcher -->
+                <div class="lang-switcher bg-white rounded-pill px-3 py-1 shadow-sm d-flex align-items-center gap-2">
+                    <a href="../en/index.html" class="text-muted text-decoration-none hover-primary">EN</a>
+                    <span class="text-muted">|</span>
+                    <a href="../cs/index.html" class="text-muted text-decoration-none hover-primary">CZ</a>
+                    <span class="text-muted">|</span>
+                    <a href="../sk/index.html" class="text-muted text-decoration-none hover-primary">SK</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="py-5 mt-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <h1 class="display-4 fw-bold mb-4 lh-sm">Odemkněte svůj potenciál s <span class="text-gradient" style="background: linear-gradient(90deg, #0078d4, #7c4dff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Copilot Chat</span></h1>
+                        <p class="lead text-muted mb-4">Bezpečný, podnikový AI asistent zahrnutý ve vaší licenci Microsoft 365. Chatujte chytřeji, pracujte rychleji a udržujte svá data v bezpečí.</p>
+                        <div class="d-flex flex-wrap gap-3">
+                            <a href="challenge.html" class="btn btn-primary btn-lg rounded-pill shadow-sm px-4">Začít výzvu</a>
+                            <a href="#benefits" class="btn btn-outline-dark btn-lg rounded-pill px-4">Proč Copilot?</a>
+                        </div>
+                        <div class="mt-4 text-muted small">
+                            <i class="fas fa-shield-alt text-success me-2"></i> Ochrana podnikových dat zahrnuta
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="glass p-4 rounded-4 position-relative">
+                            <div class="bg-white rounded-3 shadow-sm p-3 mb-3 d-flex align-items-start gap-3">
+                                <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center flex-shrink-0" style="width: 40px; height: 40px;">U</div>
+                                <div>
+                                    <p class="mb-1 small text-muted">Vy</p>
+                                    <p class="mb-0">Navrhni e-mail týmu shrnující naše výsledky za 3. čtvrtletí.</p>
+                                </div>
+                            </div>
+                            <div class="bg-light rounded-3 shadow-sm p-3 d-flex align-items-start gap-3 border border-primary border-opacity-25">
+                                <div class="rounded-circle bg-white text-primary d-flex align-items-center justify-content-center flex-shrink-0 border border-primary" style="width: 40px; height: 40px;"><i class="fas fa-robot"></i></div>
+                                <div>
+                                    <p class="mb-1 small text-muted">Copilot</p>
+                                    <p class="mb-0">Zde je návrh: "Týme, s radostí sdílím naše výsledky..."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section id="benefits" class="py-5 bg-white">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold">Proč zvolit Copilot Chat?</h2>
+                    <p class="text-muted">Je to víc než jen chatbot. Je to váš bezpečný pracovní partner.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm hover-lift p-4 text-center">
+                            <div class="mb-3 text-primary"><i class="fas fa-lock fa-3x"></i></div>
+                            <h4 class="card-title fw-bold">Podnikové zabezpečení</h4>
+                            <p class="card-text text-muted">Vaše data nikdy neopustí bezpečný cloud Microsoftu. Na rozdíl od bezplatných veřejných nástrojů AI nejsou vaše prompty používány k trénování modelu.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm hover-lift p-4 text-center">
+                            <div class="mb-3 text-primary"><i class="fab fa-microsoft fa-3x"></i></div>
+                            <h4 class="card-title fw-bold">Vytvořeno pro M365</h4>
+                            <p class="card-text text-muted">Bezproblémová integrace s vašimi pracovními daty. Přistupujte k Copilotu přímo ve svých oblíbených aplikacích Microsoft 365.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm hover-lift p-4 text-center">
+                            <div class="mb-3 text-primary"><i class="fas fa-bolt fa-3x"></i></div>
+                            <h4 class="card-title fw-bold">Zvyšte produktivitu</h4>
+                            <p class="card-text text-muted">Navrhujte e-maily, shrnujte schůzky a generujte nápady během několika sekund. Uvolněte si čas na to, co je skutečně důležité.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works / Video Section -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="video-wrapper bg-dark rounded-4 shadow overflow-hidden position-relative">
+                            <!-- Placeholder for Internal Video Player -->
+                            <video controls poster="https://via.placeholder.com/800x450.png?text=Copilot+Demo">
+                                <source src="../media/demo.mp4" type="video/mp4">
+                                Váš prohlížeč nepodporuje video tag.
+                            </video>
+                            <div class="position-absolute top-50 start-50 translate-middle text-white text-center pointer-events-none" style="pointer-events: none;">
+                                <i class="fas fa-play-circle fa-4x opacity-75"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1 mb-4 mb-lg-0">
+                        <h2 class="fw-bold mb-4">Podívejte se na Copilot v akci</h2>
+                        <ul class="list-unstyled">
+                            <li class="mb-3 d-flex gap-3">
+                                <i class="fas fa-check-circle text-primary mt-1"></i>
+                                <div><strong>Přirozený jazyk:</strong> Ptejte se stejně, jako byste se ptali kolegy.</div>
+                            </li>
+                            <li class="mb-3 d-flex gap-3">
+                                <i class="fas fa-check-circle text-primary mt-1"></i>
+                                <div><strong>Kontextově vědomý:</strong> Copilot rozumí vašemu pracovnímu kontextu a datům.</div>
+                            </li>
+                            <li class="mb-3 d-flex gap-3">
+                                <i class="fas fa-check-circle text-primary mt-1"></i>
+                                <div><strong>Bezpečný od návrhu:</strong> Vaše interakce jsou chráněny podnikovým zabezpečením.</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="py-5 text-center">
+            <div class="container glass rounded-4 p-5">
+                <h2 class="fw-bold mb-3">Jste připraveni změnit způsob, jakým pracujete?</h2>
+                <p class="lead mb-4">Připojte se k tisícům profesionálů, kteří ovládají AI.</p>
+                <a href="challenge.html" class="btn btn-primary btn-lg rounded-pill px-5 shadow">Připojit se k 30denní výzvě</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-top py-5 mt-auto">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="fw-bold mb-3">Copilot Chat</h5>
+                    <p class="text-muted small">Posilování firem pomocí bezpečných, inteligentních řešení AI. Vytvořil Ondřej Výšek, Microsoft MVP.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-muted"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="#" class="text-muted"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-muted"><i class="fab fa-github fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="fw-bold mb-3">Rychlé odkazy</h6>
+                    <ul class="list-unstyled small text-muted">
+                        <li class="mb-2"><a href="index.html" class="text-decoration-none text-muted">Domů</a></li>
+                        <li class="mb-2"><a href="challenge.html" class="text-decoration-none text-muted">Výzva</a></li>
+                        <li class="mb-2"><a href="news.html" class="text-decoration-none text-muted">Novinky</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-decoration-none text-muted">O nás</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="fw-bold mb-3">Právní informace</h6>
+                    <ul class="list-unstyled small text-muted">
+                        <li class="mb-2"><a href="privacy.html" class="text-decoration-none text-muted">Zásady ochrany osobních údajů</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Podmínky použití</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Zásady používání souborů cookie</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h6 class="fw-bold mb-3">Zůstaňte v obraze</h6>
+                    <p class="small text-muted">Přihlaste se k odběru našeho newsletteru pro nejnovější tipy a novinky o AI.</p>
+                    <form action="#" class="d-flex gap-2">
+                        <input type="email" class="form-control form-control-sm rounded-pill" placeholder="Zadejte svůj e-mail">
+                        <button class="btn btn-primary btn-sm rounded-pill px-3">Odebírat</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-top mt-4 pt-4 text-center small text-muted">
+                &copy; 2024 Projekt Copilot Chat. Všechna práva vyhrazena.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

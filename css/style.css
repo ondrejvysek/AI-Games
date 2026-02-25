@@ -1,0 +1,228 @@
+/* Global Styles */
+:root {
+    --copilot-blue: #0078d4;
+    --copilot-purple: #7c4dff;
+    --copilot-gradient: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);
+    --bg-light: #f3f4f6;
+    --text-dark: #1f2937;
+    --glass-bg: rgba(255, 255, 255, 0.7);
+    --glass-border: 1px solid rgba(255, 255, 255, 0.3);
+    --glass-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    padding-top: 80px; /* Space for fixed navbar */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Glassmorphism */
+.glass {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: var(--glass-border);
+    box-shadow: var(--glass-shadow);
+}
+
+/* Navigation - Pill Shape Inspired by Image */
+.navbar {
+    padding: 1rem 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-container {
+    max-width: 1200px; /* Or container-xxl */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+/* Brand Pill */
+.navbar-brand-pill {
+    background: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.brand-icon {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #ff4b4b; /* Red circle from image */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.brand-icon::after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #ff4b4b;
+    border-radius: 50%;
+}
+
+/* Nav Menu Pill */
+.navbar-menu-pill {
+    background: white;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.nav-link {
+    color: var(--text-dark) !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    border-radius: 20px;
+    transition: all 0.2s;
+}
+
+.nav-link:hover, .nav-link.active {
+    background-color: var(--bg-light);
+    color: var(--copilot-blue) !important;
+}
+
+/* Search/Actions Pill */
+.navbar-actions-pill {
+    background: white;
+    padding: 0.5rem;
+    border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+
+/* Mobile Toggler */
+.navbar-toggler {
+    border: none;
+    background: white;
+    border-radius: 50%;
+    padding: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Main Content Wrapper to push footer down */
+main {
+    flex: 1;
+}
+
+/* Footer */
+footer {
+    background: white;
+    margin-top: auto;
+    padding: 2rem 0;
+    border-top: 1px solid #e5e7eb;
+}
+
+/* Custom Typography & Utility */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    letter-spacing: -0.025em;
+}
+
+.text-gradient {
+    background: var(--copilot-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn-primary {
+    background: var(--copilot-blue);
+    border: none;
+    border-radius: 50px; /* Pill buttons */
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    transition: transform 0.2s;
+}
+
+.btn-primary:hover {
+    background: #0060aa; /* Darker blue */
+    transform: translateY(-2px);
+}
+
+.card {
+    border: none;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 0.3s;
+    background: white; /* Fallback */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Video Player */
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    background: #000;
+}
+
+.video-wrapper video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Language Switcher */
+.lang-switcher a {
+    text-decoration: none;
+    color: var(--text-dark);
+    margin: 0 0.25rem;
+    font-weight: 600;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+}
+.lang-switcher a:hover, .lang-switcher a.active {
+    opacity: 1;
+    color: var(--copilot-blue);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+    .navbar-menu-pill {
+        display: none; /* Hide on mobile, show via toggler */
+        position: absolute;
+        top: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+        flex-direction: column;
+        width: 90%;
+        padding: 1rem;
+        z-index: 1000;
+    }
+
+    .navbar-menu-pill.show {
+        display: flex;
+    }
+}
