@@ -11,29 +11,27 @@
 <body class="bg-light">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top p-3">
+    <nav class="navbar navbar-expand-lg fixed-top glass">
         <div class="navbar-container container-fluid">
             <!-- Brand Pill -->
             <a class="navbar-brand-pill text-decoration-none text-dark d-flex align-items-center gap-2" href="index.html">
-                <div class="brand-icon" style="width: 24px; height: 24px; border: 2px solid #ff4b4b; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                    <div style="width: 8px; height: 8px; background: #ff4b4b; border-radius: 50%;"></div>
-                </div>
+                <div class="brand-icon"></div>
                 <span class="fw-bold">Copilot Chat</span>
             </a>
 
             <!-- Mobile Toggler -->
-            <button class="navbar-toggler d-lg-none border-0 shadow-sm bg-white rounded-circle p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler d-lg-none" type="button" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
 
             <!-- Menu Pill -->
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <div class="navbar-menu-pill d-none d-lg-flex bg-white rounded-pill px-4 py-2 shadow-sm gap-4">
-                    <a class="nav-link active fw-semibold text-dark text-decoration-none" href="index.html">Home</a>
-                    <a class="nav-link fw-semibold text-dark text-decoration-none" href="challenge.html">30-Day Challenge</a>
-                    <a class="nav-link fw-semibold text-dark text-decoration-none" href="news.html">News</a>
-                    <a class="nav-link fw-semibold text-dark text-decoration-none" href="privacy.html">Privacy</a>
-                    <a class="nav-link fw-semibold text-dark text-decoration-none" href="about.html">About</a>
+                <div class="navbar-menu-pill d-none d-lg-flex">
+                    <a class="nav-link active" href="index.html">Home</a>
+                    <a class="nav-link" href="challenge.html">30-Day Challenge</a>
+                    <a class="nav-link" href="news.html">News</a>
+                    <a class="nav-link" href="privacy.html">Privacy</a>
+                    <a class="nav-link" href="about.html">About</a>
                 </div>
                 <!-- Mobile Menu -->
                 <div class="d-lg-none mt-3 bg-white p-3 rounded shadow">
@@ -55,16 +53,16 @@
 
             <!-- Actions Pill -->
             <div class="d-none d-lg-flex align-items-center gap-3">
-                <div class="navbar-actions-pill bg-white rounded-circle shadow-sm d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                <div class="navbar-actions-pill">
                     <a href="#" class="text-dark"><i class="fas fa-search"></i></a>
                 </div>
                 <!-- Language Switcher -->
                 <div class="lang-switcher bg-white rounded-pill px-3 py-1 shadow-sm d-flex align-items-center gap-2">
-                    <a href="../en/index.html" class="fw-bold text-primary text-decoration-none">EN</a>
+                    <a href="../en/index.html" class="fw-bold text-primary active">EN</a>
                     <span class="text-muted">|</span>
-                    <a href="../cs/index.html" class="text-muted text-decoration-none hover-primary">CZ</a>
+                    <a href="../cs/index.html" class="text-muted">CZ</a>
                     <span class="text-muted">|</span>
-                    <a href="../sk/index.html" class="text-muted text-decoration-none hover-primary">SK</a>
+                    <a href="../sk/index.html" class="text-muted">SK</a>
                 </div>
             </div>
         </div>
@@ -75,32 +73,114 @@
         <!-- Hero Section -->
         <section class="py-5 mt-5">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 mb-5 mb-lg-0">
-                        <h1 class="display-4 fw-bold mb-4 lh-sm">Unlock Your Potential with <span class="text-gradient" style="background: linear-gradient(90deg, #0078d4, #7c4dff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Copilot Chat</span></h1>
+                <div class="row align-items-center gy-5">
+                    <div class="col-lg-6">
+                        <h1 class="display-4 fw-bold mb-4 lh-sm">Unlock Your Potential with <span class="text-gradient">Copilot Chat</span></h1>
                         <p class="lead text-muted mb-4">The secure, enterprise-grade AI assistant included with your Microsoft 365 license. Chat smarter, work faster, and keep your data safe.</p>
                         <div class="d-flex flex-wrap gap-3">
-                            <a href="challenge.html" class="btn btn-primary btn-lg rounded-pill shadow-sm px-4">Start the Challenge</a>
+                            <a href="challenge.html" class="btn btn-primary btn-lg rounded-pill shadow-lg px-5">Start the Challenge</a>
                             <a href="#benefits" class="btn btn-outline-dark btn-lg rounded-pill px-4">Why Copilot?</a>
                         </div>
-                        <div class="mt-4 text-muted small">
-                            <i class="fas fa-shield-alt text-success me-2"></i> Enterprise Data Protection included
+                        <div class="mt-4 text-muted small d-flex align-items-center gap-2">
+                            <i class="fas fa-shield-alt text-success fa-lg"></i> Enterprise Data Protection included
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="glass p-4 rounded-4 position-relative">
-                            <div class="bg-white rounded-3 shadow-sm p-3 mb-3 d-flex align-items-start gap-3">
-                                <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center flex-shrink-0" style="width: 40px; height: 40px;">U</div>
-                                <div>
-                                    <p class="mb-1 small text-muted">You</p>
-                                    <p class="mb-0">Draft an email to the team summarizing our Q3 achievements.</p>
+                            <!-- Prompt Carousel -->
+                            <div id="promptCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
+                                <div class="carousel-inner">
+                                    <!-- Slide 1 -->
+                                    <div class="carousel-item active">
+                                        <div class="bg-white rounded-3 shadow-sm p-3 mb-3 d-flex align-items-start gap-3">
+                                            <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center flex-shrink-0" style="width: 40px; height: 40px;">U</div>
+                                            <div>
+                                                <p class="mb-1 small text-muted">You</p>
+                                                <p class="mb-0">Draft an email to the team summarizing our Q3 achievements.</p>
+                                            </div>
+                                        </div>
+                                        <div class="bg-light rounded-3 shadow-sm p-3 d-flex align-items-start gap-3 border border-primary border-opacity-25">
+                                            <div class="rounded-circle bg-white text-primary d-flex align-items-center justify-content-center flex-shrink-0 border border-primary" style="width: 40px; height: 40px;"><i class="fas fa-robot"></i></div>
+                                            <div>
+                                                <p class="mb-1 small text-muted">Copilot</p>
+                                                <p class="mb-0">Here's a draft: "Team, I'm thrilled to share our Q3 results..."</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Slide 2 -->
+                                    <div class="carousel-item">
+                                        <div class="bg-white rounded-3 shadow-sm p-3 mb-3 d-flex align-items-start gap-3">
+                                            <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center flex-shrink-0" style="width: 40px; height: 40px;">U</div>
+                                            <div>
+                                                <p class="mb-1 small text-muted">You</p>
+                                                <p class="mb-0">Summarize the key points from the meeting notes I pasted.</p>
+                                            </div>
+                                        </div>
+                                        <div class="bg-light rounded-3 shadow-sm p-3 d-flex align-items-start gap-3 border border-primary border-opacity-25">
+                                            <div class="rounded-circle bg-white text-primary d-flex align-items-center justify-content-center flex-shrink-0 border border-primary" style="width: 40px; height: 40px;"><i class="fas fa-robot"></i></div>
+                                            <div>
+                                                <p class="mb-1 small text-muted">Copilot</p>
+                                                <p class="mb-0">Here are the key points: 1. Launch delayed by 2 weeks. 2. Budget approved...</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Slide 3 -->
+                                    <div class="carousel-item">
+                                        <div class="bg-white rounded-3 shadow-sm p-3 mb-3 d-flex align-items-start gap-3">
+                                            <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center flex-shrink-0" style="width: 40px; height: 40px;">U</div>
+                                            <div>
+                                                <p class="mb-1 small text-muted">You</p>
+                                                <p class="mb-0">Create a timeline for the website redesign project.</p>
+                                            </div>
+                                        </div>
+                                        <div class="bg-light rounded-3 shadow-sm p-3 d-flex align-items-start gap-3 border border-primary border-opacity-25">
+                                            <div class="rounded-circle bg-white text-primary d-flex align-items-center justify-content-center flex-shrink-0 border border-primary" style="width: 40px; height: 40px;"><i class="fas fa-robot"></i></div>
+                                            <div>
+                                                <p class="mb-1 small text-muted">Copilot</p>
+                                                <p class="mb-0">Phase 1: Design (Weeks 1-2). Phase 2: Development (Weeks 3-6)...</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Slide 4 -->
+                                    <div class="carousel-item">
+                                        <div class="bg-white rounded-3 shadow-sm p-3 mb-3 d-flex align-items-start gap-3">
+                                            <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center flex-shrink-0" style="width: 40px; height: 40px;">U</div>
+                                            <div>
+                                                <p class="mb-1 small text-muted">You</p>
+                                                <p class="mb-0">Explain this Python function to a junior developer.</p>
+                                            </div>
+                                        </div>
+                                        <div class="bg-light rounded-3 shadow-sm p-3 d-flex align-items-start gap-3 border border-primary border-opacity-25">
+                                            <div class="rounded-circle bg-white text-primary d-flex align-items-center justify-content-center flex-shrink-0 border border-primary" style="width: 40px; height: 40px;"><i class="fas fa-robot"></i></div>
+                                            <div>
+                                                <p class="mb-1 small text-muted">Copilot</p>
+                                                <p class="mb-0">This function calculates the Fibonacci sequence recursively. It checks base cases...</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Slide 5 -->
+                                    <div class="carousel-item">
+                                        <div class="bg-white rounded-3 shadow-sm p-3 mb-3 d-flex align-items-start gap-3">
+                                            <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center flex-shrink-0" style="width: 40px; height: 40px;">U</div>
+                                            <div>
+                                                <p class="mb-1 small text-muted">You</p>
+                                                <p class="mb-0">Suggest 5 creative marketing ideas for our new coffee brand.</p>
+                                            </div>
+                                        </div>
+                                        <div class="bg-light rounded-3 shadow-sm p-3 d-flex align-items-start gap-3 border border-primary border-opacity-25">
+                                            <div class="rounded-circle bg-white text-primary d-flex align-items-center justify-content-center flex-shrink-0 border border-primary" style="width: 40px; height: 40px;"><i class="fas fa-robot"></i></div>
+                                            <div>
+                                                <p class="mb-1 small text-muted">Copilot</p>
+                                                <p class="mb-0">1. "Morning Brew" podcast sponsorship. 2. Pop-up tasting events...</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="bg-light rounded-3 shadow-sm p-3 d-flex align-items-start gap-3 border border-primary border-opacity-25">
-                                <div class="rounded-circle bg-white text-primary d-flex align-items-center justify-content-center flex-shrink-0 border border-primary" style="width: 40px; height: 40px;"><i class="fas fa-robot"></i></div>
-                                <div>
-                                    <p class="mb-1 small text-muted">Copilot</p>
-                                    <p class="mb-0">Here's a draft: "Team, I'm thrilled to share our Q3 results..."</p>
+                                <div class="mt-3 text-center">
+                                    <div class="spinner-grow spinner-grow-sm text-primary" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                    <span class="small text-muted ms-2">AI is typing...</span>
                                 </div>
                             </div>
                         </div>
@@ -110,32 +190,40 @@
         </section>
 
         <!-- Benefits Section -->
-        <section id="benefits" class="py-5 bg-white">
+        <section id="benefits" class="py-5 bg-white position-relative">
             <div class="container">
                 <div class="text-center mb-5">
-                    <h2 class="fw-bold">Why Choose Copilot Chat?</h2>
-                    <p class="text-muted">It's more than just a chatbot. It's your secure work partner.</p>
+                    <h2 class="fw-bold display-6">Why Choose Copilot Chat?</h2>
+                    <p class="text-muted lead">It's more than just a chatbot. It's your secure work partner.</p>
                 </div>
                 <div class="row g-4">
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="card h-100 border-0 shadow-sm hover-lift p-4 text-center">
                             <div class="mb-3 text-primary"><i class="fas fa-lock fa-3x"></i></div>
-                            <h4 class="card-title fw-bold">Enterprise Security</h4>
-                            <p class="card-text text-muted">Your data never leaves the secure Microsoft cloud. Unlike free public AI tools, your prompts are not used to train the model.</p>
+                            <h4 class="card-title fw-bold h5">Enterprise Security</h4>
+                            <p class="card-text text-muted small">Your data never leaves the secure Microsoft cloud. Prompts are not used for training.</p>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="card h-100 border-0 shadow-sm hover-lift p-4 text-center">
                             <div class="mb-3 text-primary"><i class="fab fa-microsoft fa-3x"></i></div>
-                            <h4 class="card-title fw-bold">Built for M365</h4>
-                            <p class="card-text text-muted">Seamlessly integrated with your work data. Access Copilot directly within your favorite Microsoft 365 apps.</p>
+                            <h4 class="card-title fw-bold h5">Built for M365</h4>
+                            <p class="card-text text-muted small">Seamlessly integrated with your work data. Access directly within your favorite apps.</p>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="card h-100 border-0 shadow-sm hover-lift p-4 text-center">
                             <div class="mb-3 text-primary"><i class="fas fa-bolt fa-3x"></i></div>
-                            <h4 class="card-title fw-bold">Boost Productivity</h4>
-                            <p class="card-text text-muted">Draft emails, summarize meetings, and generate ideas in seconds. Free up time for what truly matters.</p>
+                            <h4 class="card-title fw-bold h5">Boost Productivity</h4>
+                            <p class="card-text text-muted small">Draft emails, summarize meetings, and generate ideas in seconds.</p>
+                        </div>
+                    </div>
+                    <!-- New Card -->
+                    <div class="col-md-3">
+                        <div class="card h-100 border-0 shadow-sm hover-lift p-4 text-center bg-light">
+                            <div class="mb-3 text-primary"><i class="fas fa-user-shield fa-3x"></i></div>
+                            <h4 class="card-title fw-bold h5">Secure & Free</h4>
+                            <p class="card-text text-muted small">Like the ChatGPT you know, but completely secure and free with your license.</p>
                         </div>
                     </div>
                 </div>
@@ -145,35 +233,56 @@
         <!-- How It Works / Video Section -->
         <section class="py-5 bg-light">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 order-lg-2">
-                        <div class="video-wrapper bg-dark rounded-4 shadow overflow-hidden position-relative">
-                            <!-- Placeholder for Internal Video Player -->
-                            <video controls poster="https://via.placeholder.com/800x450.png?text=Copilot+Demo">
-                                <source src="../media/demo.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
+                <div class="row align-items-center gy-5">
+                    <div class="col-lg-7 order-lg-2">
+                        <!-- Custom Video Player -->
+                        <div class="custom-video-player" data-src="../media/demo.mp4">
+                            <video poster="https://via.placeholder.com/800x450.png?text=Copilot+Demo">
+                                <!-- Source set via JS for obfuscation -->
                             </video>
-                            <div class="position-absolute top-50 start-50 translate-middle text-white text-center pointer-events-none" style="pointer-events: none;">
-                                <i class="fas fa-play-circle fa-4x opacity-75"></i>
+                            <div class="video-overlay">
+                                <div class="play-btn-large"><i class="fas fa-play"></i></div>
+                            </div>
+                            <div class="video-controls">
+                                <div class="progress-container">
+                                    <div class="progress-bar"></div>
+                                </div>
+                                <div class="controls-row mt-2">
+                                    <div>
+                                        <button class="control-btn play-toggle"><i class="fas fa-play"></i></button>
+                                        <button class="control-btn mute-toggle"><i class="fas fa-volume-up"></i></button>
+                                    </div>
+                                    <button class="control-btn fullscreen-toggle"><i class="fas fa-expand"></i></button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 order-lg-1 mb-4 mb-lg-0">
-                        <h2 class="fw-bold mb-4">See Copilot in Action</h2>
-                        <ul class="list-unstyled">
-                            <li class="mb-3 d-flex gap-3">
-                                <i class="fas fa-check-circle text-primary mt-1"></i>
-                                <div><strong>Natural Language:</strong> Ask questions just like you would to a colleague.</div>
+                    <div class="col-lg-5 order-lg-1">
+                        <h2 class="fw-bold mb-4 display-6">See Copilot in Action</h2>
+                        <ul class="list-unstyled d-flex flex-column gap-3">
+                            <li class="d-flex gap-3 align-items-start">
+                                <div class="rounded-circle bg-primary bg-opacity-10 p-2 text-primary"><i class="fas fa-comment-dots"></i></div>
+                                <div>
+                                    <strong class="d-block">Natural Language</strong>
+                                    <span class="text-muted">Ask questions just like you would to a colleague. No complex commands needed.</span>
+                                </div>
                             </li>
-                            <li class="mb-3 d-flex gap-3">
-                                <i class="fas fa-check-circle text-primary mt-1"></i>
-                                <div><strong>Context Aware:</strong> Copilot understands your work context and data.</div>
+                            <li class="d-flex gap-3 align-items-start">
+                                <div class="rounded-circle bg-primary bg-opacity-10 p-2 text-primary"><i class="fas fa-brain"></i></div>
+                                <div>
+                                    <strong class="d-block">Context Aware</strong>
+                                    <span class="text-muted">Copilot understands your work context, emails, and files to give relevant answers.</span>
+                                </div>
                             </li>
-                            <li class="mb-3 d-flex gap-3">
-                                <i class="fas fa-check-circle text-primary mt-1"></i>
-                                <div><strong>Secure by Design:</strong> Your interactions are protected by enterprise-grade security.</div>
+                            <li class="d-flex gap-3 align-items-start">
+                                <div class="rounded-circle bg-primary bg-opacity-10 p-2 text-primary"><i class="fas fa-lock"></i></div>
+                                <div>
+                                    <strong class="d-block">Secure by Design</strong>
+                                    <span class="text-muted">Your interactions are protected by enterprise-grade security and compliance.</span>
+                                </div>
                             </li>
                         </ul>
+                        <a href="challenge.html" class="btn btn-outline-primary rounded-pill mt-3 px-4">Watch Full Demo</a>
                     </div>
                 </div>
             </div>
@@ -181,10 +290,13 @@
 
         <!-- CTA -->
         <section class="py-5 text-center">
-            <div class="container glass rounded-4 p-5">
-                <h2 class="fw-bold mb-3">Ready to transform how you work?</h2>
-                <p class="lead mb-4">Join thousands of professionals mastering AI.</p>
-                <a href="challenge.html" class="btn btn-primary btn-lg rounded-pill px-5 shadow">Join the 30-Day Challenge</a>
+            <div class="container">
+                <div class="glass rounded-4 p-5 position-relative overflow-hidden">
+                    <div class="position-absolute top-0 start-0 w-100 h-100" style="background: radial-gradient(circle at top right, rgba(124, 77, 255, 0.1), transparent 60%); pointer-events: none;"></div>
+                    <h2 class="fw-bold mb-3">Ready to transform how you work?</h2>
+                    <p class="lead mb-4 text-muted">Join thousands of professionals mastering AI.</p>
+                    <a href="challenge.html" class="btn btn-primary btn-lg rounded-pill px-5 shadow-lg">Join the 30-Day Challenge</a>
+                </div>
             </div>
         </section>
     </main>
@@ -194,36 +306,38 @@
         <div class="container">
             <div class="row gy-4">
                 <div class="col-lg-4 col-md-6">
-                    <h5 class="fw-bold mb-3">Copilot Chat</h5>
+                    <h5 class="fw-bold mb-3 d-flex align-items-center gap-2">
+                        <div class="brand-icon" style="width: 20px; height: 20px;"></div> Copilot Chat
+                    </h5>
                     <p class="text-muted small">Empowering businesses with secure, intelligent AI solutions. Created by Ondřej Výšek, Microsoft MVP.</p>
                     <div class="d-flex gap-3">
-                        <a href="#" class="text-muted"><i class="fab fa-linkedin fa-lg"></i></a>
-                        <a href="#" class="text-muted"><i class="fab fa-twitter fa-lg"></i></a>
-                        <a href="#" class="text-muted"><i class="fab fa-github fa-lg"></i></a>
+                        <a href="#" class="text-muted hover-primary transition"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="#" class="text-muted hover-primary transition"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-muted hover-primary transition"><i class="fab fa-github fa-lg"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-6">
                     <h6 class="fw-bold mb-3">Quick Links</h6>
-                    <ul class="list-unstyled small text-muted">
-                        <li class="mb-2"><a href="index.html" class="text-decoration-none text-muted">Home</a></li>
-                        <li class="mb-2"><a href="challenge.html" class="text-decoration-none text-muted">Challenge</a></li>
-                        <li class="mb-2"><a href="news.html" class="text-decoration-none text-muted">News</a></li>
-                        <li class="mb-2"><a href="about.html" class="text-decoration-none text-muted">About</a></li>
+                    <ul class="list-unstyled small text-muted d-flex flex-column gap-2">
+                        <li><a href="index.html" class="text-decoration-none text-muted hover-primary">Home</a></li>
+                        <li><a href="challenge.html" class="text-decoration-none text-muted hover-primary">Challenge</a></li>
+                        <li><a href="news.html" class="text-decoration-none text-muted hover-primary">News</a></li>
+                        <li><a href="about.html" class="text-decoration-none text-muted hover-primary">About</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2 col-md-6">
                     <h6 class="fw-bold mb-3">Legal</h6>
-                    <ul class="list-unstyled small text-muted">
-                        <li class="mb-2"><a href="privacy.html" class="text-decoration-none text-muted">Privacy Policy</a></li>
-                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Terms of Use</a></li>
-                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Cookie Policy</a></li>
+                    <ul class="list-unstyled small text-muted d-flex flex-column gap-2">
+                        <li><a href="privacy.html" class="text-decoration-none text-muted hover-primary">Privacy Policy</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted hover-primary">Terms of Use</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted hover-primary">Cookie Policy</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <h6 class="fw-bold mb-3">Stay Updated</h6>
                     <p class="small text-muted">Subscribe to our newsletter for the latest AI tips and news.</p>
                     <form action="#" class="d-flex gap-2">
-                        <input type="email" class="form-control form-control-sm rounded-pill" placeholder="Enter your email">
+                        <input type="email" class="form-control form-control-sm rounded-pill bg-light border-0" placeholder="Enter your email">
                         <button class="btn btn-primary btn-sm rounded-pill px-3">Subscribe</button>
                     </form>
                 </div>

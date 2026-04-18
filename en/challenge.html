@@ -11,24 +11,22 @@
 <body class="bg-light">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top p-3">
+    <nav class="navbar navbar-expand-lg fixed-top glass">
         <div class="navbar-container container-fluid">
             <a class="navbar-brand-pill text-decoration-none text-dark d-flex align-items-center gap-2" href="index.html">
-                <div class="brand-icon" style="width: 24px; height: 24px; border: 2px solid #ff4b4b; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                    <div style="width: 8px; height: 8px; background: #ff4b4b; border-radius: 50%;"></div>
-                </div>
+                <div class="brand-icon"></div>
                 <span class="fw-bold">Copilot Chat</span>
             </a>
-            <button class="navbar-toggler d-lg-none border-0 shadow-sm bg-white rounded-circle p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <div class="navbar-menu-pill d-none d-lg-flex bg-white rounded-pill px-4 py-2 shadow-sm gap-4">
-                    <a class="nav-link text-dark text-decoration-none" href="index.html">Home</a>
-                    <a class="nav-link active fw-semibold text-dark text-decoration-none" href="challenge.html">30-Day Challenge</a>
-                    <a class="nav-link text-dark text-decoration-none" href="news.html">News</a>
-                    <a class="nav-link text-dark text-decoration-none" href="privacy.html">Privacy</a>
-                    <a class="nav-link text-dark text-decoration-none" href="about.html">About</a>
+                <div class="navbar-menu-pill d-none d-lg-flex">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link active" href="challenge.html">30-Day Challenge</a>
+                    <a class="nav-link" href="news.html">News</a>
+                    <a class="nav-link" href="privacy.html">Privacy</a>
+                    <a class="nav-link" href="about.html">About</a>
                 </div>
                 <!-- Mobile Menu -->
                 <div class="d-lg-none mt-3 bg-white p-3 rounded shadow">
@@ -48,85 +46,237 @@
                 </div>
             </div>
             <div class="d-none d-lg-flex align-items-center gap-3">
-                <div class="navbar-actions-pill bg-white rounded-circle shadow-sm d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                <div class="navbar-actions-pill">
                     <a href="#" class="text-dark"><i class="fas fa-search"></i></a>
                 </div>
                  <div class="lang-switcher bg-white rounded-pill px-3 py-1 shadow-sm d-flex align-items-center gap-2">
-                    <a href="../en/challenge.html" class="fw-bold text-primary text-decoration-none">EN</a>
+                    <a href="../en/challenge.html" class="fw-bold text-primary active">EN</a>
                     <span class="text-muted">|</span>
-                    <a href="../cs/challenge.html" class="text-muted text-decoration-none hover-primary">CZ</a>
+                    <a href="../cs/challenge.html" class="text-muted">CZ</a>
                     <span class="text-muted">|</span>
-                    <a href="../sk/challenge.html" class="text-muted text-decoration-none hover-primary">SK</a>
+                    <a href="../sk/challenge.html" class="text-muted">SK</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <main class="py-5 mt-5">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center mb-5">
-                    <h1 class="display-4 fw-bold mb-3">30-Day <span class="text-gradient">Copilot Chat Challenge</span></h1>
-                    <p class="lead text-muted">Master AI productivity in just 5 minutes a day. Join the community and level up your skills.</p>
+    <main>
+        <!-- Hero Section -->
+        <section class="py-5 mt-5">
+            <div class="container text-center">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <span class="badge bg-primary bg-opacity-10 text-primary rounded-pill px-3 py-2 mb-3 fw-bold">Free for Microsoft 365 Users</span>
+                        <h1 class="display-3 fw-bold mb-4">30-Day <span class="text-gradient">Copilot Challenge</span></h1>
+                        <p class="lead text-muted mb-4">Master AI productivity in just 5 minutes a day. 30 emails, 30 prompts, one transformed workflow.</p>
+                        <div class="d-flex justify-content-center gap-3">
+                            <a href="#signup" class="btn btn-primary btn-lg rounded-pill shadow-lg px-5">Join for Free</a>
+                            <a href="#how-it-works" class="btn btn-outline-dark btn-lg rounded-pill px-4">How it Works</a>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div class="row justify-content-center">
-                <div class="col-md-6 col-lg-5">
-                    <div class="card border-0 shadow-lg p-4 rounded-4 glass">
-                        <div class="card-body">
+        <!-- Video Section -->
+        <section class="py-5">
+            <div class="container">
+                <div class="custom-video-player" data-src="../media/demo.mp4">
+                     <video poster="https://via.placeholder.com/800x450.png?text=Intro+to+the+Challenge">
+                        <!-- Source set via JS for obfuscation -->
+                    </video>
+                    <div class="video-overlay">
+                        <div class="play-btn-large"><i class="fas fa-play"></i></div>
+                    </div>
+                    <div class="video-controls">
+                        <div class="progress-container">
+                            <div class="progress-bar"></div>
+                        </div>
+                        <div class="controls-row mt-2">
+                             <div>
+                                <button class="control-btn play-toggle"><i class="fas fa-play"></i></button>
+                                <button class="control-btn mute-toggle"><i class="fas fa-volume-up"></i></button>
+                            </div>
+                            <button class="control-btn fullscreen-toggle"><i class="fas fa-expand"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How it Works -->
+        <section id="how-it-works" class="py-5 bg-white">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold display-6">How the Program Works</h2>
+                    <p class="text-muted">One email a day. One prompt. One concrete skill you can use immediately.</p>
+                </div>
+                <div class="row g-4 text-center">
+                    <div class="col-md-4">
+                        <div class="p-4">
+                            <div class="mb-3 d-inline-block rounded-circle bg-primary bg-opacity-10 p-4 text-primary fs-3">1</div>
+                            <h4 class="fw-bold">Sign Up</h4>
+                            <p class="text-muted">Enter your work email. We recommend using an email you access on both desktop and mobile.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-4">
+                            <div class="mb-3 d-inline-block rounded-circle bg-primary bg-opacity-10 p-4 text-primary fs-3">2</div>
+                            <h4 class="fw-bold">Daily Challenge</h4>
+                            <p class="text-muted">Receive one prompt every morning. Includes a tip on how to customize it for your context.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-4">
+                            <div class="mb-3 d-inline-block rounded-circle bg-primary bg-opacity-10 p-4 text-primary fs-3">3</div>
+                            <h4 class="fw-bold">Build the Habit</h4>
+                            <p class="text-muted">After 30 days, you'll have your own library of prompts and a routine that saves you hours.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Weekly Breakdown -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold display-6">What You Will Learn</h2>
+                    <p class="text-muted">The program progresses from basics to advanced techniques.</p>
+                </div>
+
+                <div class="d-flex justify-content-center flex-wrap gap-2 mb-5" role="tablist">
+                    <button class="btn btn-primary rounded-pill px-4 active week-tab" data-week="1">Week 1</button>
+                    <button class="btn btn-white text-dark rounded-pill px-4 week-tab" data-week="2">Week 2</button>
+                    <button class="btn btn-white text-dark rounded-pill px-4 week-tab" data-week="3">Week 3</button>
+                    <button class="btn btn-white text-dark rounded-pill px-4 week-tab" data-week="4">Week 4</button>
+                    <button class="btn btn-white text-dark rounded-pill px-4 week-tab" data-week="5">After</button>
+                </div>
+
+                <div class="row align-items-center">
+                    <div class="col-lg-5 mb-4 mb-lg-0">
+                        <h3 class="fw-bold mb-3" id="week-content-title">Week 1: Foundations & Quick Wins</h3>
+                        <p class="text-muted lead" id="week-content-desc">Start with simple, high-impact prompts. Learn to summarize emails and draft quick replies.</p>
+                        <ul class="list-unstyled d-flex flex-column gap-2 text-muted mt-4">
+                            <li><i class="fas fa-check text-primary me-2"></i> Understanding context</li>
+                            <li><i class="fas fa-check text-primary me-2"></i> Simple summarization</li>
+                            <li><i class="fas fa-check text-primary me-2"></i> Drafting replies</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="card border-0 shadow-lg glass p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary rounded-pill">Sample Prompt</span>
+                                <button class="btn btn-sm btn-light rounded-pill" id="copy-prompt-btn"><i class="far fa-copy"></i> Copy</button>
+                            </div>
+                            <div class="bg-white rounded p-3 font-monospace small text-muted border position-relative">
+                                <pre class="mb-0" id="week-prompt-text" style="white-space: pre-wrap;">Summarize this email into 3 bullet points and suggest a follow-up action.
+
+[Insert Email Here]</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="py-5 bg-white">
+            <div class="container">
+                <h2 class="fw-bold text-center mb-5">Frequently Asked Questions</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="accordion accordion-flush" id="faqAccordion">
+                            <div class="accordion-item border-0 mb-3 rounded shadow-sm bg-light">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed bg-transparent shadow-none fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                        Do I need a Microsoft 365 Copilot license?
+                                    </button>
+                                </h2>
+                                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-muted">
+                                        Not necessarily. The challenge is designed for Copilot Chat in a work environment. Feature availability may vary depending on your organization's licenses and settings.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0 mb-3 rounded shadow-sm bg-light">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed bg-transparent shadow-none fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                        How much time does it take?
+                                    </button>
+                                </h2>
+                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-muted">
+                                        The goal is 5 minutes a day. If you want, you can extend some days into deeper work, but the core task is quick.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0 mb-3 rounded shadow-sm bg-light">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed bg-transparent shadow-none fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                        How do I unsubscribe?
+                                    </button>
+                                </h2>
+                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-muted">
+                                        There will be an unsubscribe link in every email. One click and you're out, no hard feelings.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0 mb-3 rounded shadow-sm bg-light">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed bg-transparent shadow-none fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                        Can I run this as an internal program for my company?
+                                    </button>
+                                </h2>
+                                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-muted">
+                                        Yes! It's ideal to have an internal page, intro video, clear schedule, and simple registry. If you want, we can customize the page for your internal branding. Contact us for details.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Signup Section -->
+        <section id="signup" class="py-5 bg-light">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="card border-0 shadow-lg p-5 rounded-4 glass">
                             <h3 class="fw-bold mb-4 text-center">Join the Challenge</h3>
-
-                            <!-- Placeholder Form - Replace action with Brevo URL -->
-                            <form action="#" method="POST" class="needs-validation" novalidate>
+                            <form action="#" method="POST" class="needs-validation">
                                 <div class="mb-3">
                                     <label for="email" class="form-label fw-semibold">Work Email Address</label>
                                     <input type="email" class="form-control form-control-lg rounded-pill" id="email" placeholder="name@company.com" required>
-                                    <div class="invalid-feedback">Please enter a valid email.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label fw-semibold">Name (Optional)</label>
+                                    <input type="text" class="form-control form-control-lg rounded-pill" id="name" placeholder="John">
                                 </div>
 
                                 <div class="mb-4 form-check">
                                     <input type="checkbox" class="form-check-input" id="newsletter">
                                     <label class="form-check-label small text-muted" for="newsletter">
-                                        Yes, sign me up for the Copilot Chat newsletter to receive the latest AI news and tips.
+                                        Receive occasional news and tips about Copilot Chat after the challenge ends.
                                     </label>
                                 </div>
 
                                 <button type="submit" class="btn btn-primary btn-lg w-100 rounded-pill shadow-sm mb-3">Start My Journey</button>
 
                                 <p class="small text-center text-muted mb-0">
-                                    By joining, you agree to our <a href="privacy.html">Privacy Policy</a>. Service provided via Brevo.
+                                    By joining, you agree to receive the challenge emails.
+                                    <a href="privacy.html">Privacy Policy</a>.
                                 </p>
                             </form>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-6 col-lg-5 offset-lg-1 d-flex flex-column justify-content-center mt-5 mt-md-0">
-                    <div class="mb-4 d-flex align-items-start gap-3">
-                        <div class="rounded-circle bg-white shadow-sm p-3 text-primary"><i class="fas fa-envelope-open-text fa-lg"></i></div>
-                        <div>
-                            <h5 class="fw-bold">Daily Prompts</h5>
-                            <p class="text-muted">Receive a unique, practical prompt every morning via email.</p>
-                        </div>
-                    </div>
-                    <div class="mb-4 d-flex align-items-start gap-3">
-                        <div class="rounded-circle bg-white shadow-sm p-3 text-primary"><i class="fas fa-laptop-code fa-lg"></i></div>
-                        <div>
-                            <h5 class="fw-bold">Hands-On Practice</h5>
-                            <p class="text-muted">Try the prompt immediately in your own secure Copilot environment.</p>
-                        </div>
-                    </div>
-                    <div class="mb-4 d-flex align-items-start gap-3">
-                        <div class="rounded-circle bg-white shadow-sm p-3 text-primary"><i class="fas fa-certificate fa-lg"></i></div>
-                        <div>
-                            <h5 class="fw-bold">Become a Pro</h5>
-                            <p class="text-muted">Build a habit and discover hidden features you didn't know existed.</p>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </div>
+        </section>
     </main>
 
     <!-- Footer -->
@@ -134,36 +284,38 @@
         <div class="container">
             <div class="row gy-4">
                 <div class="col-lg-4 col-md-6">
-                    <h5 class="fw-bold mb-3">Copilot Chat</h5>
+                    <h5 class="fw-bold mb-3 d-flex align-items-center gap-2">
+                        <div class="brand-icon" style="width: 20px; height: 20px;"></div> Copilot Chat
+                    </h5>
                     <p class="text-muted small">Empowering businesses with secure, intelligent AI solutions. Created by Ondřej Výšek, Microsoft MVP.</p>
                     <div class="d-flex gap-3">
-                        <a href="#" class="text-muted"><i class="fab fa-linkedin fa-lg"></i></a>
-                        <a href="#" class="text-muted"><i class="fab fa-twitter fa-lg"></i></a>
-                        <a href="#" class="text-muted"><i class="fab fa-github fa-lg"></i></a>
+                        <a href="#" class="text-muted hover-primary transition"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="#" class="text-muted hover-primary transition"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-muted hover-primary transition"><i class="fab fa-github fa-lg"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-6">
                     <h6 class="fw-bold mb-3">Quick Links</h6>
-                    <ul class="list-unstyled small text-muted">
-                        <li class="mb-2"><a href="index.html" class="text-decoration-none text-muted">Home</a></li>
-                        <li class="mb-2"><a href="challenge.html" class="text-decoration-none text-muted">Challenge</a></li>
-                        <li class="mb-2"><a href="news.html" class="text-decoration-none text-muted">News</a></li>
-                        <li class="mb-2"><a href="about.html" class="text-decoration-none text-muted">About</a></li>
+                    <ul class="list-unstyled small text-muted d-flex flex-column gap-2">
+                        <li><a href="index.html" class="text-decoration-none text-muted hover-primary">Home</a></li>
+                        <li><a href="challenge.html" class="text-decoration-none text-muted hover-primary">Challenge</a></li>
+                        <li><a href="news.html" class="text-decoration-none text-muted hover-primary">News</a></li>
+                        <li><a href="about.html" class="text-decoration-none text-muted hover-primary">About</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2 col-md-6">
                     <h6 class="fw-bold mb-3">Legal</h6>
-                    <ul class="list-unstyled small text-muted">
-                        <li class="mb-2"><a href="privacy.html" class="text-decoration-none text-muted">Privacy Policy</a></li>
-                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Terms of Use</a></li>
-                         <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Cookie Policy</a></li>
+                    <ul class="list-unstyled small text-muted d-flex flex-column gap-2">
+                        <li><a href="privacy.html" class="text-decoration-none text-muted hover-primary">Privacy Policy</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted hover-primary">Terms of Use</a></li>
+                         <li><a href="#" class="text-decoration-none text-muted hover-primary">Cookie Policy</a></li>
                     </ul>
                 </div>
                  <div class="col-lg-4 col-md-6">
                     <h6 class="fw-bold mb-3">Stay Updated</h6>
                     <p class="small text-muted">Subscribe to our newsletter for the latest AI tips and news.</p>
                     <form action="#" class="d-flex gap-2">
-                        <input type="email" class="form-control form-control-sm rounded-pill" placeholder="Enter your email">
+                        <input type="email" class="form-control form-control-sm rounded-pill bg-light border-0" placeholder="Enter your email">
                         <button class="btn btn-primary btn-sm rounded-pill px-3">Subscribe</button>
                     </form>
                 </div>
